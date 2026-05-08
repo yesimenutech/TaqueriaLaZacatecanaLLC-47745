@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/afd35kswj0io/public_html/taquerialazacatecanallc.online
+    - /bin/cp -R * $DEPLOYPATH
