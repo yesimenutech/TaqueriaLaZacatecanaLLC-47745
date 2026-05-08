@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta Tags agregados -->
     <meta name="description" content="Taquería La Zacatecana LLC en Pigeon Forge, TN. Auténticos tacos y comida mexicana con sazón tradicional. ¡Visítanos en 2538 McGill St!">
     <meta name="keywords" content="taquería, comida mexicana, tacos, Pigeon Forge, Tennessee, Taquería La Zacatecana, auténtica comida mexicana, restaurante mexicano, McGill St">
     <meta name="author" content="Taquería La Zacatecana LLC">
     <meta name="theme-color" content="#CE1126">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.taquerialazacatecana.com/">
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.taquerialazacatecana.com/">
     <meta property="og:title" content="Taquería La Zacatecana LLC | Auténtica Comida Mexicana en Pigeon Forge, TN">
@@ -18,13 +16,11 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/yesimenutech/TaqueriaLaZacatecanaLLC-47745/main/TaqueriaLaZacatecanaLOGO.png">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="Taquería La Zacatecana">
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.taquerialazacatecana.com/">
     <meta property="twitter:title" content="Taquería La Zacatecana LLC | Sazón Mexicano Auténtico">
     <meta property="twitter:description" content="Tacos, platillos caseros y el verdadero sabor de México en Pigeon Forge, TN.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/yesimenutech/TaqueriaLaZacatecanaLLC-47745/main/TaqueriaLaZacatecanaLOGO.png">
-    <!-- Favicon con el logo -->
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/yesimenutech/TaqueriaLaZacatecanaLLC-47745/main/TaqueriaLaZacatecanaLOGO.png">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/yesimenutech/TaqueriaLaZacatecanaLLC-47745/main/TaqueriaLaZacatecanaLOGO.png">
     <title>Taquería La Zacatecana LLC – Auténtica Comida Mexicana en Pigeon Forge, TN</title>
@@ -32,7 +28,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
-        /* Reset and Base Styles */
         *,
         *::before,
         *::after {
@@ -42,9 +37,9 @@
         }
 
         :root {
-            --color-primary: #CE1126;      /* Rojo mexicano */
+            --color-primary: #CE1126;
             --color-primary-hover: #8B0000;
-            --color-secondary: #006847;    /* Verde mexicano */
+            --color-secondary: #006847;
             --color-secondary-light: #e6f2ed;
             --color-text-dark: #2d1c15;
             --color-text-light: #4a2c1a;
@@ -52,6 +47,8 @@
             --color-background: #FFF9F5;
             --color-footer: #2d1c15;
             --color-footer-text: #f0e6d2;
+            --color-star: #F59E0B;
+            --color-star-empty: #D1D5DB;
             --font-serif: 'PT Serif', Georgia, serif;
             --font-sans: 'Open Sans', Arial, sans-serif;
         }
@@ -67,7 +64,6 @@
             color: var(--color-text-dark);
             background-color: var(--color-background);
             overflow-x: hidden;
-            /* Patrón de grecas mexicanas muy sutil */
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L32 15 L42 10 L35 18 L45 22 L33 24 L38 33 L30 26 L22 33 L27 24 L15 22 L25 18 L18 10 L28 15 Z' fill='none' stroke='%23CE1126' stroke-width='0.4' opacity='0.08'/%3E%3C/svg%3E");
             background-size: 60px 60px;
         }
@@ -88,7 +84,7 @@
             color: inherit;
         }
 
-        /* Navbar con banda tricolor */
+        /* Navbar */
         .navbar {
             position: fixed;
             top: 0;
@@ -97,7 +93,7 @@
             background-color: var(--color-white);
             z-index: 1000;
             padding: 10px 0;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             border-bottom: 4px solid var(--color-primary);
         }
@@ -108,10 +104,10 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: repeating-linear-gradient(90deg, 
-                var(--color-primary) 0px, var(--color-primary) 10px,
-                var(--color-white) 10px, var(--color-white) 20px,
-                var(--color-secondary) 20px, var(--color-secondary) 30px);
+            background: repeating-linear-gradient(90deg,
+                    var(--color-primary) 0px, var(--color-primary) 10px,
+                    var(--color-white) 10px, var(--color-white) 20px,
+                    var(--color-secondary) 20px, var(--color-secondary) 30px);
             opacity: 0.7;
         }
 
@@ -160,7 +156,6 @@
         .nav-link:hover {
             color: var(--color-primary-hover);
         }
-
         .nav-link::after {
             content: '';
             position: absolute;
@@ -171,7 +166,6 @@
             background-color: var(--color-primary);
             transition: width 0.3s ease;
         }
-
         .nav-link:hover::after {
             width: 100%;
         }
@@ -185,7 +179,6 @@
             cursor: pointer;
             padding: 5px;
         }
-
         .toggler-icon {
             width: 25px;
             height: 3px;
@@ -194,7 +187,7 @@
             border-radius: 2px;
         }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
             position: relative;
             height: 85vh;
@@ -207,16 +200,14 @@
             background-position: center;
             background-attachment: fixed;
         }
-
         .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.65));
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65));
         }
-
         .hero-content {
             position: relative;
             z-index: 1;
@@ -225,7 +216,6 @@
             padding: 0 20px;
             max-width: 900px;
         }
-
         .hero-subtitle {
             display: flex;
             align-items: center;
@@ -237,24 +227,21 @@
             margin-bottom: 20px;
             letter-spacing: 2px;
         }
-
         .line-decoration {
             width: 45px;
             height: 2px;
             background-color: var(--color-white);
             opacity: 0.8;
         }
-
         .hero-title {
             font-family: var(--font-serif);
             font-size: 74px;
             font-style: italic;
             font-weight: 400;
             margin-bottom: 40px;
-            text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
             line-height: 1.1;
         }
-
         .hero-buttons {
             display: flex;
             gap: 15px;
@@ -274,28 +261,54 @@
             cursor: pointer;
             border: 2px solid transparent;
         }
-
         .btn-outline {
             background: transparent;
             border: 2px solid var(--color-primary);
             color: var(--color-white);
         }
-
         .btn-outline:hover {
             background: var(--color-primary);
             color: var(--color-white);
             border-color: var(--color-primary);
         }
-
         .btn-filled {
             background: var(--color-primary);
             border: 2px solid var(--color-primary);
             color: var(--color-white);
         }
-
         .btn-filled:hover {
             background: var(--color-primary-hover);
             border-color: var(--color-primary-hover);
+        }
+
+        /* Botón Google Reviews (fondo claro) */
+        .btn-google-reviews {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 34px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+        }
+        .btn-google-reviews:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(206, 17, 38, 0.25);
+        }
+        .btn-google-reviews svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
         }
 
         /* Section Titles */
@@ -331,14 +344,12 @@
         .section-subtitle-container.centered {
             justify-content: center;
         }
-
         .line-small {
             width: 30px;
             height: 3px;
             background-color: var(--color-primary);
             border-radius: 2px;
         }
-
         .section-subtitle {
             font-size: 13px;
             font-weight: 700;
@@ -351,37 +362,33 @@
         .about-section {
             padding: 80px 0;
             background-color: var(--color-white);
-            background-image: 
-                linear-gradient(45deg, rgba(206,17,38,0.03) 25%, transparent 25%),
-                linear-gradient(-45deg, rgba(0,104,71,0.03) 25%, transparent 25%);
+            background-image:
+                linear-gradient(45deg, rgba(206, 17, 38, 0.03) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(0, 104, 71, 0.03) 25%, transparent 25%);
         }
-
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 40px;
             align-items: start;
         }
-
         .about-text p {
             color: var(--color-text-light);
             margin-bottom: 15px;
             line-height: 1.8;
         }
-
         .about-images {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-
         .about-image {
             width: 100%;
             height: 350px;
             object-fit: cover;
             border-radius: 8px;
             border: 3px solid var(--color-primary);
-            box-shadow: 5px 5px 0 rgba(0,104,71,0.2);
+            box-shadow: 5px 5px 0 rgba(0, 104, 71, 0.2);
         }
 
         /* Gallery Section */
@@ -391,7 +398,6 @@
             border-top: 4px double var(--color-secondary);
             border-bottom: 4px double var(--color-primary);
         }
-
         #gallery-container {
             display: flex;
             flex-wrap: wrap;
@@ -399,57 +405,257 @@
             margin-top: 40px;
             justify-content: center;
         }
-
         .gallery-img {
             width: calc(33.333% - 14px);
             aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 8px;
             border: 3px solid var(--color-secondary);
-            box-shadow: 4px 4px 0 rgba(206,17,38,0.3);
+            box-shadow: 4px 4px 0 rgba(206, 17, 38, 0.3);
             transition: transform 0.3s ease;
         }
-
         .gallery-img:hover {
             transform: scale(1.03);
         }
 
-        @media (max-width: 768px) {
-            .gallery-img {
-                width: calc(50% - 10px);
-            }
-        }
-
-        /* Delivery Section (From Our Family to Yours) */
+        /* Delivery Section */
         .delivery-section {
             padding: 80px 0;
             background-color: var(--color-white);
         }
-
         .delivery-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
         }
-
         .delivery-text p {
             color: var(--color-text-light);
             margin-bottom: 15px;
             line-height: 1.8;
         }
-
         .delivery-image-container {
             position: relative;
         }
-
         .delivery-image {
             width: 100%;
             height: 400px;
             object-fit: cover;
             border-radius: 8px;
             border: 3px solid var(--color-primary);
-            box-shadow: 5px 5px 0 rgba(0,104,71,0.25);
+            box-shadow: 5px 5px 0 rgba(0, 104, 71, 0.25);
+        }
+
+        /* ══════════════════════════════════════════ */
+        /*  GOOGLE REVIEWS SECTION                     */
+        /* ══════════════════════════════════════════ */
+        .reviews-section {
+            padding: 80px 0;
+            background-color: var(--color-background);
+            border-top: 4px double var(--color-primary);
+            border-bottom: 4px double var(--color-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Decoración sutil de fondo para la sección de reseñas */
+        .reviews-section::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(206, 17, 38, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .reviews-section::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(0, 104, 71, 0.04) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .reviews-header .google-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--color-white);
+            border: 1px solid #e0e0e0;
+            border-radius: 30px;
+            padding: 8px 18px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+        .reviews-header .google-badge svg {
+            width: 20px;
+            height: 20px;
+        }
+        .reviews-header .overall-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .reviews-header .overall-rating .stars {
+            display: flex;
+            gap: 3px;
+        }
+        .reviews-header .overall-rating .stars svg {
+            width: 26px;
+            height: 26px;
+        }
+        .reviews-header .rating-number {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--color-text-dark);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Tarjeta de reseña */
+        .review-card {
+            background: var(--color-white);
+            border-radius: 12px;
+            padding: 28px 24px 22px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            transition: all 0.35s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            position: relative;
+            border-top: 4px solid transparent;
+        }
+        .review-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
+            border-top-color: var(--color-primary);
+        }
+        .review-card:nth-child(odd):hover {
+            border-top-color: var(--color-primary);
+        }
+        .review-card:nth-child(even):hover {
+            border-top-color: var(--color-secondary);
+        }
+
+        .review-card .card-stars {
+            display: flex;
+            gap: 3px;
+        }
+        .review-card .card-stars svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .review-card .review-text {
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--color-text-light);
+            flex-grow: 1;
+            font-style: italic;
+            position: relative;
+            padding-left: 16px;
+            border-left: 3px solid rgba(206, 17, 38, 0.2);
+        }
+
+        .review-card .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .review-card .reviewer-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--color-secondary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+            font-family: var(--font-sans);
+        }
+        .review-card:nth-child(odd) .reviewer-avatar {
+            background: var(--color-primary);
+        }
+        .review-card .reviewer-name {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--color-text-dark);
+            line-height: 1.2;
+        }
+        .review-card .reviewer-meta {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.3;
+        }
+        .review-card .local-guide-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #1A73E8;
+            background: #E8F0FE;
+            border-radius: 20px;
+            padding: 3px 10px;
+            margin-top: 4px;
+        }
+        .review-card .local-guide-badge svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .review-card .rating-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .review-card .rating-badge {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: #f5f5f5;
+            color: #555;
+            white-space: nowrap;
+        }
+        .review-card .rating-badge.excellent {
+            background: #E6F2ED;
+            color: #006847;
+        }
+
+        .reviews-cta {
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
         }
 
         /* Footer */
@@ -459,7 +665,6 @@
             color: var(--color-footer-text);
             border-top: 6px solid var(--color-primary);
         }
-
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -467,7 +672,6 @@
             max-width: 700px;
             margin: 0 auto;
         }
-
         .footer-title {
             font-family: var(--font-serif);
             font-size: 22px;
@@ -479,18 +683,15 @@
             display: inline-block;
             padding-bottom: 5px;
         }
-
         .footer-col p {
             font-size: 14px;
             line-height: 1.9;
         }
-
         #social-icons {
             display: flex;
             gap: 12px;
             margin-top: 20px;
         }
-
         #social-icons a {
             display: inline-flex;
             align-items: center;
@@ -498,37 +699,54 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            background-color: rgba(255,255,255,0.12);
+            background-color: rgba(255, 255, 255, 0.12);
             color: var(--color-primary);
             transition: all 0.3s ease;
         }
-
         #social-icons a:hover {
             background-color: var(--color-secondary);
             color: #fff;
             transform: translateY(-3px);
         }
 
-        /* Responsive */
+        /* ─────────────────────────────────────────── */
+        /*  RESPONSIVE                                   */
+        /* ─────────────────────────────────────────── */
         @media (max-width: 992px) {
-            .hero-title { font-size: 56px; }
-            .about-grid { grid-template-columns: 1fr; }
-            .about-images { order: -1; }
-            .delivery-grid { grid-template-columns: 1fr; }
-            .delivery-image-container { order: -1; }
+            .hero-title {
+                font-size: 56px;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-images {
+                order: -1;
+            }
+            .delivery-grid {
+                grid-template-columns: 1fr;
+            }
+            .delivery-image-container {
+                order: -1;
+            }
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
-            .navbar-toggler { display: flex; }
+            .navbar-toggler {
+                display: flex;
+            }
             .nav-menu {
                 position: absolute;
                 top: 100%;
-                left: 0; right: 0;
+                left: 0;
+                right: 0;
                 flex-direction: column;
                 background: var(--color-white);
                 padding: 20px;
                 gap: 15px;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
                 transform: translateY(-120%);
                 opacity: 0;
                 visibility: hidden;
@@ -540,39 +758,84 @@
                 opacity: 1;
                 visibility: visible;
             }
-            .hero-title { font-size: 42px; }
-            .footer-grid { grid-template-columns: 1fr; text-align: center; }
-            #social-icons { justify-content: center; }
+            .hero-title {
+                font-size: 42px;
+            }
+            .gallery-img {
+                width: calc(50% - 10px);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            #social-icons {
+                justify-content: center;
+            }
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .review-card {
+                padding: 22px 18px 18px;
+            }
         }
 
         @media (max-width: 480px) {
-            .hero-title { font-size: 34px; }
-            .section-title { font-size: 30px; }
-            .hero-buttons { flex-direction: column; align-items: center; }
-            .btn { width: 100%; max-width: 260px; text-align: center; }
-            .about-images { grid-template-columns: 1fr; }
-            .about-image { height: 250px; }
+            .hero-title {
+                font-size: 34px;
+            }
+            .section-title {
+                font-size: 30px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 260px;
+                text-align: center;
+            }
+            .about-images {
+                grid-template-columns: 1fr;
+            }
+            .about-image {
+                height: 250px;
+            }
+            .btn-google-reviews {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
         }
 
         /* Animations */
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .hero-content { animation: fadeInUp 1s ease-out; }
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
     </style>
     <script>
         window.MENU_TECH_STATE = {
-            "lang":"en",
-            "showReservations":true,
-            "cuid":"1ad0e2a4-1e67-43d7-a9d6-2887b4828d4a",
-            "ruid":"0e4e3150-5f52-4b6e-8274-9fdc2a7ff298",
-            "title":"Taqueria La Zacatecana LLC",
-            "heroImg":"https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262487/a8pmnzofr01rzhzqpxlv.jpg",
-            "aboutImg1":"https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262535/dxjlxjinqmeysdsfccqd.jpg",
-            "aboutImg2":"https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262539/pirc6jjnif7xgieswutl.jpg",
-            "deliveryImg":"https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262668/gtfvmsucocoot2t0o6kq.jpg",
-            "gallery":[
+            "lang": "en",
+            "showReservations": true,
+            "cuid": "1ad0e2a4-1e67-43d7-a9d6-2887b4828d4a",
+            "ruid": "0e4e3150-5f52-4b6e-8274-9fdc2a7ff298",
+            "title": "Taqueria La Zacatecana LLC",
+            "heroImg": "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262487/a8pmnzofr01rzhzqpxlv.jpg",
+            "aboutImg1": "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262535/dxjlxjinqmeysdsfccqd.jpg",
+            "aboutImg2": "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262539/pirc6jjnif7xgieswutl.jpg",
+            "deliveryImg": "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262668/gtfvmsucocoot2t0o6kq.jpg",
+            "gallery": [
                 "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262616/dn3eqy4yuqaxpuhnxuhv.jpg",
                 "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262617/hiqekgpzfablbb1i87rq.jpg",
                 "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262618/wt20s0v11q63y9xalpkw.jpg",
@@ -586,25 +849,25 @@
                 "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262623/zikxfngo453tklymoinx.jpg",
                 "https://res.cloudinary.com/dbbjxhvz5/image/upload/v1778262624/lny6fqaaq93aiwqu3gzx.jpg"
             ],
-            "contact":{
-                "phone":"865-365-1554",
-                "address":"2538 McGill St, Pigeon Forge, TN 37863",
-                "hours":"Monday to Saturday: 11:00 AM – 9:00 PM   Sunday: Closed"
+            "contact": {
+                "phone": "865-365-1554",
+                "address": "2538 McGill St, Pigeon Forge, TN 37863",
+                "hours": "Monday to Saturday: 11:00 AM – 9:00 PM   Sunday: Closed"
             },
-            "socials":[
-                {"platform":"facebook","url":"https://www.facebook.com/taquerialazacatecana/"}
+            "socials": [
+                { "platform": "facebook", "url": "https://www.facebook.com/taquerialazacatecana/" }
             ],
-            "paragraphs":{
-                "about":"At Taqueria La Zacatecana, we offer authentic Mexican food with traditional flavors that transport you to Mexico. Located in the heart of Pigeon Forge, we are known for our fresh tacos, delicious Mexican favorites, and a warm, family-friendly atmosphere.",
-                "delivery":"At Taqueria La Zacatecana, we bring the authentic taste of Mexico to Pigeon Forge with fresh tacos, traditional recipes, and meals made with love. Our goal is to make every visit feel like home.\n\nWe are a family of entrepreneurs passionate about sharing our culture, traditions, and Mexican hospitality with every guest."
+            "paragraphs": {
+                "about": "At Taqueria La Zacatecana, we offer authentic Mexican food with traditional flavors that transport you to Mexico. Located in the heart of Pigeon Forge, we are known for our fresh tacos, delicious Mexican favorites, and a warm, family-friendly atmosphere.",
+                "delivery": "At Taqueria La Zacatecana, we bring the authentic taste of Mexico to Pigeon Forge with fresh tacos, traditional recipes, and meals made with love. Our goal is to make every visit feel like home.\n\nWe are a family of entrepreneurs passionate about sharing our culture, traditions, and Mexican hospitality with every guest."
             },
-            "titles":{
-                "about-title":"Taqueria La Zacatecana LLC",
-                "about-subtitle":"About Us",
-                "gallery-title":"Delicious Mexican Food",
-                "gallery-subtitle":"Love At First Bite",
-                "delivery-title":"From Our Family to Yours",
-                "delivery-subtitle":"Authentic Mexican Experience"
+            "titles": {
+                "about-title": "Taqueria La Zacatecana LLC",
+                "about-subtitle": "About Us",
+                "gallery-title": "Delicious Mexican Food",
+                "gallery-subtitle": "Love At First Bite",
+                "delivery-title": "From Our Family to Yours",
+                "delivery-subtitle": "Authentic Mexican Experience"
             }
         };
     </script>
@@ -654,7 +917,6 @@
                     data-glf-cuid="1ad0e2a4-1e67-43d7-a9d6-2887b4828d4a"
                     data-glf-ruid="0e4e3150-5f52-4b6e-8274-9fdc2a7ff298">
                 </menutech-orders>
-
                 <div id="hero-reservations-wrapper" style="display: inline-block;">
                     <menutech-reservations
                         id="hero-reservations"
@@ -691,7 +953,7 @@
         </div>
     </section>
 
-    <!-- Delicious Mexican Food Section (Galería) -->
+    <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="container">
             <h2 class="section-title centered" id="gallery-title" data-es="Deliciosa Comida Mexicana" data-en="Delicious Mexican Food">Delicious Mexican Food</h2>
@@ -700,12 +962,12 @@
                 <span class="section-subtitle" id="gallery-subtitle" data-es="Amor al Primer Bocado" data-en="Love At First Bite">Love At First Bite</span>
             </span>
             <div id="gallery-container">
-                <!-- Se llena dinámicamente -->
+                <!-- Llenado dinámico -->
             </div>
         </div>
     </section>
 
-    <!-- From Our Family to Yours Section -->
+    <!-- Delivery Section -->
     <section class="delivery-section">
         <div class="container">
             <div class="delivery-grid">
@@ -724,6 +986,195 @@
             </div>
         </div>
     </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  GOOGLE REVIEWS SECTION                   -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="reviews-section" id="reviews-section">
+        <div class="container">
+            <div class="reviews-header">
+                <!-- Insignia de Google -->
+                <div class="google-badge">
+                    <!-- Icono de Google -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <span>Google Reviews</span>
+                </div>
+
+                <!-- Calificación general -->
+                <div class="overall-rating">
+                    <div class="stars">
+                        <!-- 5 estrellas -->
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <span class="rating-number">5.0</span>
+                </div>
+
+                <!-- Título de la sección -->
+                <h2 class="section-title centered" id="reviews-title" data-es="Lo Que Dicen Nuestros Clientes" data-en="What Our Customers Say">What Our Customers Say</h2>
+                <span class="section-subtitle-container centered">
+                    <span class="line-small"></span>
+                    <span class="section-subtitle" id="reviews-subtitle" data-es="Reseñas Destacadas" data-en="Featured Reviews">Featured Reviews</span>
+                </span>
+            </div>
+
+            <!-- Grid de reseñas -->
+            <div class="reviews-grid">
+
+                <!-- ═══ Reseña 1: Hazel Gutierrez ═══ -->
+                <div class="review-card">
+                    <div class="card-stars">
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <p class="review-text">"I traveled from Florida and loved everything. The owner was incredibly kind. I had lengua and chicharrón tacos, 100% recommended. The beef soup was 10/10 and the hibiscus tea was amazing. I will definitely return on my next trip to Tennessee."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">H</div>
+                        <div>
+                            <div class="reviewer-name">Hazel Gutierrez</div>
+                            <div class="reviewer-meta">9 opiniones · 13 fotos · Hace 2 meses · Almuerzo</div>
+                        </div>
+                    </div>
+                    <div class="rating-badges">
+                        <span class="rating-badge excellent">Comida: 5/5</span>
+                        <span class="rating-badge excellent">Servicio: 5/5</span>
+                        <span class="rating-badge excellent">Ambiente: 5/5</span>
+                    </div>
+                </div>
+
+                <!-- ═══ Reseña 2: Noe Ginez ═══ -->
+                <div class="review-card">
+                    <div class="card-stars">
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <p class="review-text">"He visitado varios lugares donde venden tacos y este establecimiento en verdad superó completamente mis expectativas, si buscas un sabor auténtico en la carne definitivamente este es el lugar, recomiendo ampliamente los tacos de cabeza y más."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">N</div>
+                        <div>
+                            <div class="reviewer-name">Noe Ginez</div>
+                            <div class="reviewer-meta">9 opiniones · 18 fotos · Hace 8 meses · $10-20</div>
+                            <span class="local-guide-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Local Guide
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rating-badges">
+                        <span class="rating-badge excellent">★ 5 estrellas</span>
+                    </div>
+                </div>
+
+                <!-- ═══ Reseña 3: Robert Jude Jacob ═══ -->
+                <div class="review-card">
+                    <div class="card-stars">
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <p class="review-text">"I've been coming to Taqueria La Zacatecana very often, both for dining in and takeout, and I'm always impressed. The Spanish staff are warm, professional, and handle guests with great care. Their restrooms are always clean and hygienic, and the food is consistently excellent."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">R</div>
+                        <div>
+                            <div class="reviewer-name">Robert Jude Jacob</div>
+                            <div class="reviewer-meta">5 opiniones · 24 fotos · Hace 7 meses</div>
+                            <span class="local-guide-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Local Guide
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rating-badges">
+                        <span class="rating-badge excellent">★ 5 estrellas</span>
+                    </div>
+                </div>
+
+                <!-- ═══ Reseña 4: Kayla Fannan ═══ -->
+                <div class="review-card">
+                    <div class="card-stars">
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <p class="review-text">"Hands down one of the best Mexican restaurants I've eaten in years. Very authentic. They have a salsa/topping bar filled with some great salsa and the carnitas was TO DIE FOR. The restaurant was very clean, and the employees friendly. 10/10 will come here again next time I visit!"</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">K</div>
+                        <div>
+                            <div class="reviewer-name">Kayla Fannan</div>
+                            <div class="reviewer-meta">4 opiniones · 6 fotos · Hace 8 meses · Cena · $10-20</div>
+                        </div>
+                    </div>
+                    <div class="rating-badges">
+                        <span class="rating-badge excellent">Comida: 5/5</span>
+                        <span class="rating-badge excellent">Servicio: 5/5</span>
+                        <span class="rating-badge excellent">Ambiente: 5/5</span>
+                    </div>
+                </div>
+
+                <!-- ═══ Reseña 5: Quinn Jones ═══ -->
+                <div class="review-card">
+                    <div class="card-stars">
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                        <svg viewBox="0 0 20 20" fill="#F59E0B"><path d="M10 1l2.39 4.84L17.5 6.5l-3.75 3.65.89 5.15L10 12.75l-4.64 2.44.89-5.15L2.5 6.5l5.11-.74L10 1z"/></svg>
+                    </div>
+                    <p class="review-text">"This is a classic hole in the wall that you'll love. An unassuming and easy-to-miss corner storefront of a strip mall, you'll step inside and wonder if you picked the right place because it looks like a cafeteria smushed into a retail space. You have, indeed, found the right place. The food is absolutely amazing. There is table service, and they're super friendly. The prices are so very reasonable."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">Q</div>
+                        <div>
+                            <div class="reviewer-name">Quinn Jones</div>
+                            <div class="reviewer-meta">120 opiniones · 176 fotos · Hace 8 meses · $10-20</div>
+                            <span class="local-guide-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Local Guide
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rating-badges">
+                        <span class="rating-badge excellent">★ 5 estrellas</span>
+                    </div>
+                </div>
+
+            </div><!-- /.reviews-grid -->
+
+            <!-- Botón para ver todas las reseñas en Google -->
+            <div class="reviews-cta">
+                <a href="https://www.google.com/search?q=Taqueria+La+Zacatecana+LLC+Pigeon+Forge+2538+McGill+St&oq=Taqueria+La+Zacatecana+LLC%09Pigeon+Forge+%092538+McGill+St&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIHCAIQABjvBTIKCAMQABiABBiiBDIKCAQQABiABBiiBNIBBzM1NWowajoA" target="_blank" rel="noopener noreferrer" class="btn-google-reviews" id="reviews-cta-btn" data-es="Ver Todas las Reseñas en Google" data-en="View All Reviews on Google">
+                    <!-- Icono Google -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <span>View All Reviews on Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════════════ -->
+    <!--  FIN GOOGLE REVIEWS SECTION               -->
+    <!-- ══════════════════════════════════════════ -->
 
     <!-- Footer -->
     <footer class="site-footer">
@@ -761,6 +1212,14 @@
                     const text = el.getAttribute(`data-${lang}`);
                     if (text !== null) el.textContent = text;
                 });
+                // Actualizar el texto del botón de Google Reviews
+                const ctaBtn = document.getElementById('reviews-cta-btn');
+                if (ctaBtn) {
+                    const span = ctaBtn.querySelector('span');
+                    if (span) {
+                        span.textContent = ctaBtn.getAttribute(`data-${lang}`) || span.textContent;
+                    }
+                }
                 const esBtn = document.getElementById('lang-es');
                 const enBtn = document.getElementById('lang-en');
                 if (esBtn && enBtn) {
@@ -880,7 +1339,6 @@
                     }
                 }
 
-                // Actualizar botones Menutech
                 const cuid = data.cuid || '';
                 const ruid = data.ruid || '';
                 const ordersBtn = document.querySelector('menutech-orders');
@@ -906,7 +1364,6 @@
                 document.getElementById('lang-es').addEventListener('click', () => applyLanguage('es'));
                 document.getElementById('lang-en').addEventListener('click', () => applyLanguage('en'));
 
-                // Navbar toggler
                 const toggler = document.getElementById('navbar-toggler');
                 const menu = document.getElementById('nav-menu');
                 toggler.addEventListener('click', () => {
@@ -943,7 +1400,6 @@
                     }
                 });
 
-                // Animaciones
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
